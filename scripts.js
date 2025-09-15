@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.has('debug')) {
         localStorage.clear();
-        console.log('Debug mode: localStorage cleared');
     }
     formCheck();
 });
