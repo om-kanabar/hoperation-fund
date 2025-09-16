@@ -1,8 +1,18 @@
 /* © Om Kanabar 2025 
 All Rights Reserved */
 
-body, html{
-    background-color: #111;
+:root{
+    --white: #fefcf7;
+    --cream: #e8e5dd;
+    --dark: #191919;
+    --gray: #6b7c85;
+    --dark-text-title: #ffb300;
+    --light-text: #233c4a;
+    --black: #111111;
+    --navy: #0b1623;
+    --accent: #d4a017;
+    --blue-grey: #434e54;
+    --trans: 0.2s ease;
 }
 
 #check{
@@ -30,4 +40,84 @@ body, html{
 
 .hidden{
     display: none !important;
+}
+
+nav{
+    height: 150px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.brandName{
+    font-family: 'Cal Sans', sans-serif;
+    font-size: 30px;
+}
+
+nav li{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+nav li a{
+    color: var(--dark) !important;
+    font-size: 20px;
+    transition: 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    z-index: 2;
+    transition: var(--trans);
+    text-decoration: none;
+}
+
+nav li a.active {
+    color: #114a9b;
+    text-decoration: underline !important;
+    text-decoration-thickness: 3px !important;
+    text-underline-offset: 6px !important;  
+}
+
+nav li a:hover{
+    background-color: transparent !important;
+    color: var(--white) !important;
+}
+
+nav li a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    margin-left: -20%;
+    background-color: #114a9b;
+    color: var(--white);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+nav li a:hover::after {
+    width: 140%;
+}
+
+nav li a:hover {
+    color: var(--white);
+}
+
+.hero{
+    height: 70vh;
+    text-align: center;
+}
+
+.hero h1{
+    color: #012b5b;
+    font-family: 'Lexend', sans-serif;
+    font-weight: bold;
+}
+
+.hero h2{
+    margin-top: 2vh;
+    color: #012b5b;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
 }

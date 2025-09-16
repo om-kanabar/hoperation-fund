@@ -13,6 +13,9 @@ All Rights Reserved -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <form id="check">
@@ -40,8 +43,50 @@ All Rights Reserved -->
             <div id="message" class="mt-5" aria-live="polite"></div>
         </div>
     </form>
-    <nav class="navbar">
-        <img src="/Assets/HoperationFundLogo.svg" height="100px">
-    </nav>
+    <div id="main" class="hidden">
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+            <div class="container">
+                <!-- Brand with logo -->
+                <a class="navbar-brand logo" href="#">
+                    <img src="/Assets/HoperationFundLogo.png"
+                        alt="Hoperation Fund"
+                        height="150">
+                </a>
+
+                <!-- Mobile toggle -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Nav links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <span class="brandName">Hoperation Fund</span>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#fundraising">Fundraising</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#investing">Investing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#donation">Our Donation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#meetings">Meetings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero">
+            <h1>We Fundraise</h1>
+            <h1>We Invest</h1>
+            <h1>We Donate</h1>
+            <h1>We Educate</h1>
+            <h2>​Learn the Skills Schools Neglect;<br>Support the Causes Others Forget</h2>
+            <div class="stats">
+                <p><span id="investLectures">0</span> Investment Lectures Given</p>
+                <p>$<span id="moneyRaised">0</span> Raised</p>
+                <p><span id="nonprofits">0</span> Nonprofits Supported</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
