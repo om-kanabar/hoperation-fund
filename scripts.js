@@ -100,6 +100,7 @@ function pause(ms) {
 }
 
 async function stats(){
+    await pause(200)
     let elem = document.getElementById("investLectures");
     if (!elem) return;
     let current = 0;
