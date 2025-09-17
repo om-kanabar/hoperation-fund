@@ -111,7 +111,7 @@ nav li a:hover {
     padding-top: 5vh;
     padding-bottom: 5vh;
     text-align: center;
-    background-image: url('/Assets/chicagoBackground.png');
+    background-image: url('https://github.com/om-kanabar/hoperation-fund/blob/main/Assets/chicagoBackground.png?raw=true');
     background-size: cover;       /* makes it fill the area */
     min-height: 70vh;
     background-position: center;  /* centers the image */
