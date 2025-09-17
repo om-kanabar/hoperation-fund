@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concept Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    h1{
+        text-align: center;
+        font-weight: 700;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        letter-spacing: 2px;
+        font-size: 40px;
+        color: #254151 !important;
+        font-family: 'Lexend', sans-serif;
+        font-weight: 800;
+    }
+</style>
+
+<body class="bg-light d-flex justify-content-center align-items-center vh-100">
+  <div class="card shadow p-4 text-center">
+    <h1 class="card-title mb-3"><bold>Concept Website</bold></h1>
+    <p class="card-text">This is just a concept for a bigger website. For now, only the home page is available.</p>
+    <p class="mt-4 text-muted">Redirecting to the home page in <span id="countdown">5</span> seconds...</p>
+  </div>
+  <script>
+    let seconds = 5;
+    const countdown = document.getElementById('countdown');
+    const interval = setInterval(() => {
+      seconds--;
+      countdown.textContent = seconds;
+      if (seconds <= 0) {
+        clearInterval(interval);
+        window.location.href = '/';
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

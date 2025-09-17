@@ -162,8 +162,7 @@ nav li a:hover {
     margin-bottom: 1.5rem;
     letter-spacing: 2px;
     color: #254151;
-    font-family: 'Lato', sans-serif;
-    font-weight: 800;
+    font-family: 'Lexend', sans-serif;
 }
 
 .aboutLeft p{
@@ -198,4 +197,92 @@ nav li a:hover {
 
 .stats span{
     font-weight: 900;
+}
+
+.latestNews{
+    width: 100vw;
+}
+
+.latestNews h1{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #254151;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+}
+
+.latestNews p{
+    font-size: 20px;
+    width: 61.8vw;
+}
+
+.latestNews div{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact{
+    background: linear-gradient(270deg, #e4f3e9, #e0f4fa, #e4f3e9);
+    background-size: 600% 600%;
+    animation: gradientMove 12s ease infinite;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+
+.contact h1{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #254151;
+    font-family: 'Lexend', sans-serif;
+    font-weight: 800;
+}
+
+footer{
+    margin-top: 2vh;
+    padding-top: 2vh;
+    min-height: 4vh;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer p{
+    min-height: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+}
+
+.ms-10{
+    margin-left: 10vw;
+}
+
+footer .icon-box{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .icon-box a{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2vw;
+    font-size: 30px;
+    transition: var(--trans);
+}
+
+footer a:hover{
+    color: #9b9b9b;
 }
